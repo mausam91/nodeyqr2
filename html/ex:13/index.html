@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create User</title>
+</head>
+
+<body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded">
+        <label for="nameid"> Name:</label>
+        <input type="text" name="name" placeholder="name" size="30" maxlength="12" id="nameid">
+        <br>
+        <label for="optionid"> Content:</label>
+        <select name="movies" multiple="multiple" size="4" id="optionid">
+            <option value=" deadpool">Deadpool </option>
+            <option value=" batman_vs_superman">Batman v Superman </option>
+            <option value=" civil_war">Captain America: Civil War </option>
+            <option value=" doctor_strange">Doctor Strange </option>
+            <option value=" suicide_squad">Suicide Squad </option>
+            <option value=" apocalypse">X-Men: Apocalypse </option>
+            <option value=" gotg_vol2">Guardians of the Galaxy Vol 2 </option>
+            <option value=" justice_league">Justice League </option>
+            <option value=" logan">Logan </option>
+            <option value=" homecoming">Spider-Man: Homecoming </option>
+            <option value=" wonder_woman" selected>Wonder Woman </option>
+            <option value=" thor_ragnarok">Thor: Ragnarok </option>
+            <option value=" black_panther">Black Panther </option>
+        </select>
+        <label for="bio">Tell us your Bio:</label>
+
+        <textarea id="bio" name="bio" rows="5" cols="33">Tell us about yourself</textarea>
+        <label for="avatar">Choose a profile picture:</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+
+        <button type="reset" name="clearform" value="reset">Clear Form</button>
+        <button value="Submit" name="Submit">Submit</button>
+
+
+    </form>
+
+
+
+</body>
+
+</html>
