@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create User</title>
+</head>
+<body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded" >
+        <fieldset>
+        <legend>Login Form</legend>
+        <label for="userid">User Name:</label>
+        <input type="text" name="username" placeholder="username" size= "30" maxlength="12" id="userid">
+        <label for="passwordId">Password:</label>
+        <input type="password" name="password"  placeholder="password" size= "30" maxlength="8">
+        <p>Select your favourite superheroe:</p>
+        <label for="Supermanid">Superman</label>
+        <input type="radio" name="heros"  value="Superman" id="Supermanid" checked>
+        <label for="Batmanid">Batman</label>
+        <input type="radio" name="heros"  value="Batman" id="Batmanid" >
+        <label for="WonderWomanid">Wonder Woman</label>
+        <input type="radio" name="heros"  value="Wonder Woman" id="WonderWomanid" >
+        <label for="Flashid">Flash</label>
+        <input type="radio" name="heros"  value="Flash" id="Flashid">
+        <label for="Thorid">Thor & Hulk</label>
+        <input type="radio" name="heros"  value="Thor & Hulk" id="Thorid">
+        <p>Select your favourite video game:</p>
+        <label for="Fifaid">Fifa</label>
+        <input type="checkbox" name="videogames" value="Fifa" id="Fifaid" checked>
+        <label for="NHLid">NHL</label>
+        <input type="checkbox" name="videogames" value="NHL" id="NHLid">
+        <label for="ResidenEvilid">Residen Evil</label>
+        <input type="checkbox" name="videogames" value="Residen Evil  " id="ResidenEvilid">
+        <label for="Unchartedid">Uncharted</label>
+        <input type="checkbox" name="videogames" value="Uncharted" id="Unchartedid" checked>
+        
+        <input type="hidden" name="userid" value="2300" >
+        <br>
+        <p>
+        <input type="image" id="image" alt="Login" src="submit.gif">
+        </p>
+        </fieldset>
+      </form>
+      
+</body>
+</html>
