@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Elements</title>
+    <script>
+            window.onload = function(){
+                var listItem = document.querySelector('li')
+                var count = 1
+                listItem.classList.add('orange')
+                while(!!listItem.nextElementSibling){
+                    listItem = listItem.nextElementSibling
+                    listItem.classList.add('orange')
+                    count++
+                }while(!!listItem.previousElementSibling){
+                    listItem = listItem.previousElementSibling
+                    count--
+                    if (count == 3){
+                        listItem.classList.replace('orange', 'red')
+                    } else if (count === 1){
+                        listItem.classList.replace('orange','green')
+                    } console.log(listItem)
+                }
+            }
+        </script>
+
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .orange {
+            color: orange;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+</body>
+
+</html>
